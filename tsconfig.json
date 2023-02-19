@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        // "module": "commonjs",
+        // "target": "es6",
+        "target": "es2022",                                      /* Had to specify es6 as instance of did not work with object inheritence and changeing this was a tip here: https://stackoverflow.com/a/64102219 */
+        "lib": ["dom","es2022"],                                 /* allow newst features ecmascript / node features. Fix error with Error("msg", {cause: xyz}) https://stackoverflow.com/a/73394582 */
+        // "sourceMap": true,
+        "declaration": true,
+        // "outDir": "dist/js",
+        "module": "es2022",
+        "moduleResolution":"node",
+        
+        // necessary for importing a json file
+        "resolveJsonModule": true
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
